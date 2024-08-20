@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Causten-Bold;
+  src: url("/assets/fonts/Causten-Bold.otf");
+}
+
+@font-face {
+  font-family: Causten-Regular;
+  src: url("/assets/fonts/Causten-Regular.otf");
+}
+
+@font-face {
+  font-family: Causten-Medium;
+  src: url("/assets/fonts/Causten-Medium.otf");
+}
+
+@font-face {
+  font-family: CoreSans-ExtraBold;
+  src: url("/assets/fonts/CoreSansC-ExtraBold.woff2");
+}
+
+@font-face {
+  font-family: CoreSans-Bold;
+  src: url("/assets/fonts/CoreSansC-Bold.woff2");
+}
+
+@font-face {
+  font-family: CoreSans-Medium;
+  src: url("/assets/fonts/CoreSansC-Medium.woff");
+}
+
+body {
+  font-family: Causten-Regular;
+}
