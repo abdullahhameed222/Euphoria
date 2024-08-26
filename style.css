@@ -2122,19 +2122,19 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
     }
       }
 
-.footer_nav {
+.footer .footer-nav {
       max-width: 142px;
     }
 
-.footer_nav:nth-child(3) {
+.footer .footer-nav:nth-child(3) {
         max-width: 162px;
       }
 
-.footer_nav:nth-child(4) {
+.footer .footer-nav:nth-child(4) {
         max-width: 394px;
       }
 
-.footer_nav span {
+.footer .footer-nav span {
         font-family: Causten-Bold;
         color: #FFFFFF;
         color: var(--color-3);
@@ -2144,11 +2144,11 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
         display: block;
       }
 
-.footer_nav ul {
+.footer .footer-nav ul {
         gap:5px;
       }
 
-.footer_nav ul li,.footer_nav ul a {
+.footer .footer-nav ul li,.footer .footer-nav ul a {
           list-style-type: none;
           color: #FFFFFF;
           color: var(--color-3);
@@ -2160,7 +2160,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
           transition: color .25s linear;
         }
 
-.footer_nav ul li:hover, .footer_nav ul a:hover {
+.footer .footer-nav ul li:hover, .footer .footer-nav ul a:hover {
             color: #F6F6F6;
             color: var(--color-4);
             cursor: pointer;

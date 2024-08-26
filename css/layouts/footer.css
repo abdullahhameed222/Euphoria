@@ -22,7 +22,7 @@
       }
     }
 
-    &_nav {
+    .footer-nav {
       max-width: 142px;
 
       &:nth-child(3) {
