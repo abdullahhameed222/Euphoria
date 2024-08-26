@@ -1,3 +1,12 @@
 @import "../layouts/header.css";
 @import "../layouts/slider.css";
 @import "../layouts/featured-categories";
+@import "../layouts/new-arrivals";
+@import "../layouts/discounted-categories";
+@import "../layouts/img-w-text";
+@import "../layouts/men-categories";
+@import "../layouts/women-categories";
+@import "../layouts/featured-brands";
+@import "../layouts/featured-cards";
+@import "../layouts/testimonials.css";
+@import "../layouts/footer.css";

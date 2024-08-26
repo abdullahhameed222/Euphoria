@@ -1,0 +1,64 @@
+.new-arrivals {
+  margin-bottom: 100px;
+  
+  .container {
+    max-width: 1238px;
+  }
+
+  .new-arrivals-wrapper {
+    max-width: 1167px;
+  }
+  
+  .swiper-slide {
+    img {
+      max-width: 262px;
+
+      @media (max-width: 1110px) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    span {
+      display: block;
+      margin-top: 32px;
+      color: var(--color-1);
+      font-family: Causten-Bold;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 14px;
+    height: 12px;
+    top: 151px;
+    margin: 0;
+
+    @media (max-width: 767px) {
+      top: 50%;
+    }
+  }
+  
+  .swiper-button-next::after, 
+  .swiper-button-prev::after {
+    content: "";
+  }
+  
+  .swiper-button-next {
+    right: -33px; 
+
+    @media (max-width: 1200px) {
+      right: -5px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -37px;
+
+    @media (max-width: 1200px) {
+      left: -5px; 
+    }
+  }
+}

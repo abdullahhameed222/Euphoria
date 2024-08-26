@@ -1,0 +1,73 @@
+.women-categories {
+  margin-bottom: 100px;
+  
+  h2 {
+    max-width: 440px;
+    color: var(--color-1);
+    font-family: CoreSans-Bold;
+    margin-bottom: 70px;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      background-color: var(--color-5);
+      width: 6px;
+      height: 30px;
+      border-radius: 10px;
+      margin: 0 20px -5px 0;
+    }
+  }
+
+  .women-categories-wrapper {
+    gap: 20px;
+
+    @media (max-width: 1024px) {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .category {
+    max-width: 270px;
+
+    img {
+      max-width: 270px;
+      margin-bottom: 15px;
+      transition: .5s ease all;
+
+      &:hover {
+        transform: scale(.9);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .category-details {
+    font-family: "Poppins", sans-serif;
+
+    p {
+      font-weight: 500;
+      color: var(--color-8);
+      max-width: 179px;
+      font-size: 17px;
+      line-height: 1.5;
+      letter-spacing: -0.52px;
+      margin-bottom: 3px;
+    }
+
+    span {
+      font-weight: 500;
+      color: var(--color-7);
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    a {
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: translateX(5px);
+        cursor: pointer;
+      }
+    }
+  }
+}

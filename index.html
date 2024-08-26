@@ -5,61 +5,64 @@
     <link rel="icon" type="image/svg+xml" href="assets/icons/icon-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Euphoria - Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header relative">
       <div class="container flex flex-justify-between">
         <a href="index.html" class="logo">
           <img src="assets/icons/icon-logo.svg" alt="logo">
         </a>
 
-        <nav class="flex flex-align-center">
-          <li>
-            <a href="#">Shop</a>
-          </li>
+        <nav class="header-nav flex flex-align-center w-100 flex-justify-evenly">
+          <ul class="flex flex-wrap">
+            <li><a href="#">Shop</a></li>
+            
+            <li><a href="#">Men</a></li>
+            
+            <li><a href="#">Women</a></li>
+            
+            <li><a href="#">Combos</a> </li>
+            
+            <li><a href="#">Joggers</a></li>
+          </ul>
+            
+          <div class="flex flex-justify-between header-item">
+            <input type="text" placeholder="Search">
+            <div class="cta flex">
+              <a class="item"> 
+                <img src="assets/icons/icon-like.svg" alt="icon like">
+              </a>
 
-          <li>
-            <a href="#">Men</a>
-          </li>
+              <a class="item">
+                <img src="assets/icons/icon-user.svg" alt="icon user">
+              </a>
 
-          <li>
-            <a href="#">Women</a>
-          </li>
-
-          <li>
-            <a href="#">Combos</a>
-          </li>
-
-          <li>
-            <a href="#">Joggers</a>
-          </li>
-        </nav>
-
-        <div class="flex flex-justify-between">
-          <input type="text" placeholder="Search">
-          <div class="cta flex">
-            <div class="item"> 
-              <img src="assets/icons/icon-like.svg" alt="icon like">
-            </div>
-
-            <div class="item">
-              <img src="assets/icons/icon-user.svg" alt="icon user">
-            </div>
-
-            <div class="item">
-              <img src="assets/icons/icon-cart.svg" alt="icon cart">
+              <a class="item">
+                <img src="assets/icons/icon-cart.svg" alt="icon cart">
+              </a>
             </div>
           </div>
+        </nav>
+ 
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="slider swiper mySwiper">
+      <section class="slider swiper mySwiper1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="assets/imgs/img-slider-1.png" alt="slider img">
+            <img class="img-slider-desktop" src="assets/imgs/img-slider-1.png" alt="slider img">
+            <img class="img-slider-mobile" src="assets/imgs/img-slider-mobile.jpg" alt="slider img">
             <div class="slider content absolute">
               <span>T-shirt / Tops</span>
               <h1>Summer Value Pack</h1>
@@ -69,7 +72,8 @@
           </div>
 
           <div class="swiper-slide">
-            <img src="assets/imgs/img-slider-1.png" alt="slider img">
+            <img class="img-slider-desktop" src="assets/imgs/img-slider-1.png" alt="slider img">
+            <img class="img-slider-mobile" src="assets/imgs/img-slider-mobile.jpg" alt="slider img">
             <div class="slider content absolute">
               <span>T-shirt / Tops</span>
               <h1>Summer Value Pack</h1>
@@ -84,19 +88,639 @@
         <div class="swiper-button-prev">
           <img src="assets/icons/icon-chevron-left.svg" alt="chevron-icon">
         </div>
+        
         <div class="swiper-pagination"></div>
       </section>
 
       <section class="featured-categories">
-        <div class="conatiner flex flex-justify-between">
-          <div class="categories-details">
-            <span>Low Price</span>
-            <h2>High Coziness</h2>
+        <div class="container flex flex-justify-between flex-wrap">
+          <div class="categories-container relative">
+            <img src="assets/imgs/img-featured-categories-1.png" alt="catgeory img">
+            <div class="categories-details absolute">
+              <span>Low Price</span>
+              <h2>High Coziness</h2>
+              <p class="text-md text-uppercase">upto 50% off</p>
+              <a href="#">Explore Items</a>
+            </div>
+          </div>
+
+          <div class="categories-container relative">
+            <img src="assets/imgs/img-featured-categories-2.png" alt="catgeory img">
+            <div class="categories-details absolute">
+              <span>Beyoung Presents</span>
+              <h2>Breezy Summer Style</h2>
+              <p class="text-md text-uppercase">upto 50% off</p>
+              <a href="#">Explore Items</a>
+            </div>
+          </div>
+       </div> 
+      </section>
+
+      <section class="new-arrivals">
+        <div class="container">
+          <h2 class="heading-right-border">New Arrival</h2>
+          <div class="container relative new-arrivals-wrapper">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/imgs/img-new-arrivals-1.png" alt="swiper img">
+                  <span>Knitted Joggers</span>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/imgs/img-new-arrivals-2.png" alt="swiper img">
+                  <span>Full Sleeve</span>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/imgs/img-new-arrivals-3.png" alt="swiper img">
+                  <span>Active T-Shirts</span>  
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/imgs/img-new-arrivals-4.png" alt="swiper img">
+                  <span>Urban Shirts</span>  
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/imgs/img-new-arrivals-1.png" alt="swiper img">
+                  <span>Knitted Joggers</span>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/imgs/img-new-arrivals-2.png" alt="swiper img">
+                  <span>Full Sleeve</span>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/imgs/img-new-arrivals-3.png" alt="swiper img">
+                  <span>Active T-Shirts</span>  
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/imgs/img-new-arrivals-4.png" alt="swiper img">
+                  <span>Urban Shirts</span>  
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <img src="assets/icons/icon-arrow-right.svg" alt="icon">
+            </div>
+
+            <div class="swiper-button-prev">
+              <img src="assets/icons/icon-arrow-left.svg" alt="icon">
+            </div>
+          </div>
+        </div>  
+      </section>
+
+      <section class="discounted-categories">
+        <div class="container">
+          <h2 class="heading-right-border">Big Saving Zone</h2>
+          <div class="categories-wrapper flex flex-wrap">
+
+            <div class="category relative">
+              <img src="assets/imgs/img-sales-1.png" class="discounted-category-img" alt="discounted category img">
+              <div class="category details absolute">
+                <h3>Hawaiian Shirts</h3>
+                <p class="text-md">Dress up in summer vibe</p>
+                <span class="text-uppercase">upto 50% off</span>
+                <img src="assets/icons/icon-arrow-down.svg" alt="arrow down icon">
+                <a class="text-uppercase" href="#">Shop Now</a>
+              </div>
+            </div>
+
+            <div class="category relative">
+              <img src="assets/imgs/img-sales-2.png" class="discounted-category-img" alt="discounted category img">
+              <div class="category details absolute flex flex-col flex-align-end">
+                <div class="limited-btn" href="#">Limited Stock</div>
+                <h3>Printed T-Shirt</h3>
+                <p class="text-sm">New Designs Every Week</p>
+                <span class="text-uppercase">upto 40% off</span>
+                <img src="assets/icons/icon-arrow-down.svg" alt="arrow down icon">
+                <a class="text-uppercase" href="#">Shop Now</a>
+              </div>
+            </div> 
+
+            <div class="category relative">
+              <img src="assets/imgs/img-sales-3.png" class="discounted-category-img" alt="discounted category img">
+              <div class="category details absolute flex flex-col flex-align-start">
+                <h3>Cargo Joggers</h3>
+                <p class="text-sm">Move with style & comfort</p>
+                <span class="text-uppercase">upto 50% off</span>
+                <img src="assets/icons/icon-arrow-down-black.svg" alt="arrow down icon">
+                <a class="text-uppercase" href="#">Shop Now</a>
+              </div>
+            </div>
+
+            <div class="category relative">
+              <img src="assets/imgs/img-sales-4.png" class="discounted-category-img" alt="discounted category img">
+              <div class="category details absolute flex flex-col flex-align-start">
+                <h3>Urban Shirts</h3>
+                <p class="text-md">Street Style Icon</p>
+                <span class="text-uppercase">flat 60% off</span>
+                <img src="assets/icons/icon-arrow-down-black.svg" alt="arrow down icon">
+                <a class="text-uppercase" href="#">Shop Now</a>
+              </div>
+            </div>
+
+            <div class="category relative">
+              <img src="assets/imgs/img-sales-5.png"  class="discounted-category-img" alt="discounted category img">
+              <div class="category details absolute flex flex-col flex-align-start">
+                <h3>Oversized T-Shirts</h3>
+                <p class="text-md">Street Style Icon</p>
+                <span class="text-uppercase">flat 60% off</span>
+                <img src="assets/icons/icon-arrow-down-black.svg" alt="arrow down icon">
+                <a class="text-uppercase" href="#">Shop Now</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="img-w-text">    
+        <div class="container flex">
+          <div class="img-w-text-content relative w-100">
+            <img class="img-w-text-bg absolute" src="assets/imgs/img-img-w-text-bg.png" alt="img-w-text">
+            <div class="img-w-text-details relative">
+              <h2 class="text-uppercase">we made your everyday fashion better</h2>
+              <p>In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+              <a href="#">Shop Now</a>
+            </div>
+          </div>
+          <img class="img-w-text-img" src="assets/imgs/img-img-w-text.png" alt="img with text img">
+        </div>
+      </section>
+
+      <section class="men-categories">
+        <div class="container">
+          <h2 class="heading-right-border">Categories For Men</h2>
+          <div class="men-categories-wrapper flex flex-wrap">
+            <div class="category">
+              <img src="assets/imgs/img-man-category-1.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Shirts</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-man-category-2.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Printed T-Shirts</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>              
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-man-category-3.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Plain T-Shirt</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>             
+              </div>
+            </div>
+              
+            <div class="category">
+              <img src="assets/imgs/img-man-category-4.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Polo T-Shirt</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>              
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-man-category-5.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Hoodies & Sweetshirt</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>                    
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-man-category-6.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Jeans</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>                    
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-man-category-7.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Activewear</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>                    
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-man-category-8.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Boxers</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>                    
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="women-categories">
+        <div class="container">
+          <h2 class="heading-right-border">Categories For Women</h2>
+          <div class="women-categories-wrapper flex flex-wrap flex-justify-between">
+            <div class="category">
+              <img src="assets/imgs/img-women-category-1.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Hoodies & Sweetshirt</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>                
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-women-category-2.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Coats & Parkas</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>                
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-women-category-3.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Tees & T-Shirt</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>                
+              </div>
+            </div>
+
+            <div class="category">
+              <img src="assets/imgs/img-women-category-4.png" alt="men category cover img">
+              <div class="category-details flex flex-justify-between flex-align-end">
+                <div>
+                  <p>Boxers</p>
+                  <span>Explore Now!</span>
+                </div>
+                <a href="#">
+                  <img src="assets/icons/icon-arrow-right-category.svg" alt="icon right arrow">
+                </a>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-brands">
+        <div class="container flex flex-col flex-align-center">
+          <h2 class="text-center">Top Brands Deal</h2>
+          <p>Up To <span>60%</span> off on brands</p>
+          <div class="featured-brands-wrapper flex flex-justify-between flex-wrap">
+            <img src="assets/imgs/img-featured-brand-1.png" alt="featured brand">
+            <img src="assets/imgs/img-featured-brand-2.png" alt="featured brand">
+            <img src="assets/imgs/img-featured-brand-3.png" alt="featured brand">
+            <img src="assets/imgs/img-featured-brand-4.png" alt="featured brand">
+            <img src="assets/imgs/img-featured-brand-5.png" alt="featured brand">
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-cards">
+        <div class="container">
+          <h2 class="heading-right-border">In The Limelight</h2>
+          <div class="featured-cards-wrapper flex flex-justify-between flex-wrap">
+            <div class="featured-card relative">
+              <img src="assets/imgs/img-featured-card-1.png" alt="featured card">
+              <div class="featured-like-btn absolute">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71977 2.71206C6.34495 1.10986 4.05234 0.678871 2.32979 2.14601C0.607228 3.61314 0.364716 6.06612 1.71745 7.80131C2.84216 9.244 6.24591 12.2867 7.36148 13.2716C7.48629 13.3817 7.54869 13.4368 7.62148 13.4585C7.68502 13.4774 7.75453 13.4774 7.81806 13.4585C7.89085 13.4368 7.95326 13.3817 8.07807 13.2716C9.19363 12.2867 12.5974 9.244 13.7221 7.80131C15.0748 6.06612 14.8619 3.59771 13.1098 2.14601C11.3576 0.694304 9.0946 1.10986 7.71977 2.71206Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="flex flex-justify-between flex-align-center">
+                <div class="featured-card-details">
+                  <p class="text-md">Black Sweatshirt with ....</p>
+                  <span class="text-sm">Jhanvi’s  Brand</span>
+                </div>
+                <div class="price text-sm">$123.00</div>
+              </div>
+            </div>
+
+            <div class="featured-card relative">
+              <img src="assets/imgs/img-featured-card-2.png" alt="featured card">
+              <div class="featured-like-btn absolute">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71977 2.71206C6.34495 1.10986 4.05234 0.678871 2.32979 2.14601C0.607228 3.61314 0.364716 6.06612 1.71745 7.80131C2.84216 9.244 6.24591 12.2867 7.36148 13.2716C7.48629 13.3817 7.54869 13.4368 7.62148 13.4585C7.68502 13.4774 7.75453 13.4774 7.81806 13.4585C7.89085 13.4368 7.95326 13.3817 8.07807 13.2716C9.19363 12.2867 12.5974 9.244 13.7221 7.80131C15.0748 6.06612 14.8619 3.59771 13.1098 2.14601C11.3576 0.694304 9.0946 1.10986 7.71977 2.71206Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="flex flex-justify-between flex-align-center">
+                <div class="featured-card-details">
+                  <p class="text-md">line Pattern Black H...</p>
+                  <span class="text-sm">AS’s  Brand</span>
+                </div>
+                <div class="price text-sm">$37.00</div>
+              </div>
+            </div>
+
+            <div class="featured-card relative">
+              <img src="assets/imgs/img-featured-card-3.png" alt="featured card">
+              <div class="featured-like-btn absolute">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71977 2.71206C6.34495 1.10986 4.05234 0.678871 2.32979 2.14601C0.607228 3.61314 0.364716 6.06612 1.71745 7.80131C2.84216 9.244 6.24591 12.2867 7.36148 13.2716C7.48629 13.3817 7.54869 13.4368 7.62148 13.4585C7.68502 13.4774 7.75453 13.4774 7.81806 13.4585C7.89085 13.4368 7.95326 13.3817 8.07807 13.2716C9.19363 12.2867 12.5974 9.244 13.7221 7.80131C15.0748 6.06612 14.8619 3.59771 13.1098 2.14601C11.3576 0.694304 9.0946 1.10986 7.71977 2.71206Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="flex flex-justify-between flex-align-center">
+                <div class="featured-card-details">
+                  <p class="text-md">Black Shorts</p>
+                  <span class="text-sm">MM’s  Brand</span>
+                </div>
+                <div class="price flex flex-align-center flex-justify-center text-sm">$123.00</div>
+              </div>
+            </div>
+
+            <div class="featured-card relative">
+              <img src="assets/imgs/img-featured-card-4.png" alt="featured card">
+              <div class="featured-like-btn absolute">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.71977 2.71206C6.34495 1.10986 4.05234 0.678871 2.32979 2.14601C0.607228 3.61314 0.364716 6.06612 1.71745 7.80131C2.84216 9.244 6.24591 12.2867 7.36148 13.2716C7.48629 13.3817 7.54869 13.4368 7.62148 13.4585C7.68502 13.4774 7.75453 13.4774 7.81806 13.4585C7.89085 13.4368 7.95326 13.3817 8.07807 13.2716C9.19363 12.2867 12.5974 9.244 13.7221 7.80131C15.0748 6.06612 14.8619 3.59771 13.1098 2.14601C11.3576 0.694304 9.0946 1.10986 7.71977 2.71206Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="flex flex-justify-between flex-align-center">
+                <div class="featured-card-details">
+                  <p class="text-md">Levender Hoodie with ....</p>
+                  <span class="text-sm">Nike’s  Brandd</span>
+                </div>
+                <div class="price text-sm">$119.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container relative">
+           <h2 class="heading-right-border">Feedback</h2>
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-details">
+                    <div class="testimonial-header flex flex-justify-between">
+                      <img class="testimonial-client" src="assets/imgs/img-testimonial-1.png" alt="customer img">
+                      <img src="assets/icons/icon-rating-1.svg" alt="ratings">
+                    </div>
+                    <h4>Floyd Miles</h4>
+                    <div>
+                      <p class="text-sm">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.<br> 
+                        Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-details">
+                    <div class="testimonial-header flex flex-justify-between">
+                      <img class="testimonial-client" src="assets/imgs/img-testimonial-2.png" alt="customer img">
+                      <img src="assets/icons/icon-rating-2.svg" alt="ratings">
+                    </div>
+                    <h4>Ronald Richards</h4>
+                    <div>
+                      <p class="text-sm">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-details">
+                    <div class="testimonial-header flex flex-justify-between">
+                      <img class="testimonial-client" src="assets/imgs/img-testimonial-1.png" alt="customer img">
+                      <img src="assets/icons/icon-rating-1.svg" alt="ratings">
+                    </div>
+                    <h4>Floyd Miles</h4>
+                    <div>
+                      <p class="text-sm">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.<br> 
+                        Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-details">
+                    <div class="testimonial-header flex flex-justify-between">
+                      <img class="testimonial-client" src="assets/imgs/img-testimonial-1.png" alt="customer img">
+                      <img src="assets/icons/icon-rating-1.svg" alt="ratings">
+                    </div>
+                    <h4>Floyd Miles</h4>
+                    <div>
+                      <p class="text-sm">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.<br> 
+                        Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-details">
+                    <div class="testimonial-header flex flex-justify-between">
+                      <img class="testimonial-client" src="assets/imgs/img-testimonial-2.png" alt="customer img">
+                      <img src="assets/icons/icon-rating-2.svg" alt="ratings">
+                    </div>
+                    <h4>Ronald Richards</h4>
+                    <div>
+                      <p class="text-sm">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="testimonial-details">
+                    <div class="testimonial-header flex flex-justify-between">
+                      <img class="testimonial-client" src="assets/imgs/img-testimonial-1.png" alt="customer img">
+                      <img src="assets/icons/icon-rating-1.svg" alt="ratings">
+                    </div>
+                    <h4>Floyd Miles</h4>
+                    <div>
+                      <p class="text-sm">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.<br> 
+                        Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list flex flex-justify-between">
+          <div class="footer-nav">
+            <span>Need Help</span>
+            <ul class="flex flex-col">
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              
+              <li>
+                <a href="#">Track Order</a>
+              </li>
+              
+              <li>
+                <a href="#">Returns & Refunds</a>
+              </li>
+              
+              <li>
+                <a href="#">FAQ's</a>
+              </li>
+              
+              <li>
+                <a href="#">Career</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-nav">
+            <span>Company</span>
+            <ul class="flex flex-col">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              
+              <li>
+                <a href="#">euphoria Blog</a>
+              </li>
+              
+              <li>
+                <a href="#">euphoriastan</a>
+              </li>
+              
+              <li>
+                <a href="#">Collaboration</a>
+              </li>
+              
+              <li>
+                <a href="#">Media</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-nav">
+            <span>More Info</span>
+            <ul class="flex flex-col">
+              <li>
+                <a href="#">Term and Conditions</a>
+              </li>
+              
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Shipping Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-nav">
+            <span>Location</span>
+            <ul class="flex flex-col">
+              <li>support@euphoria.in</li>
+              
+              <li>Eklingpura Chouraha, Ahmedabad Main Road</li>
+              
+              <li>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-details flex flex-justify-between">
+          <div class="footer-icons flex flex-align-end flex-justify-center">
+            <img src="assets/icons/icon-facebook.svg" alt="icon">
+            <img src="assets/icons/icon-instagram.svg" alt="icon">
+            <img src="assets/icons/icon-twitter.svg" alt="icon">
+            <img src="assets/icons/icon-likdeln.svg" alt="icon">
+          </div>
+          <div class="footer-content">
+            <h3>Download The App</h3>
+            <div class="footer-icons flex">
+              <img src="assets/imgs/img-footer-playstore.png" alt="playstore icon">
+              <img src="assets/imgs/img-footer-appstore.png" alt="appstore icon">
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-categories flex flex-justify-between">
+          <h3>Popular Categories</h3>
+          <img src="assets/icons/icon-chevron-down.svg" alt="">
+        </div>
+        <p class="footer-copyright text-center">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="assets/js/script.min.js"></script>
     <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -9,8 +9,18 @@
 }
 
 @font-face {
+  font-family: Causten-light;
+  src: url("/assets/fonts/Causten-Light.ttf");
+}
+
+@font-face {
   font-family: Causten-Medium;
   src: url("/assets/fonts/Causten-Medium.otf");
+}
+
+@font-face {
+  font-family: Causten-Semibold;
+  src: url("/assets/fonts/Causten-SemiBold.otf");
 }
 
 @font-face {
