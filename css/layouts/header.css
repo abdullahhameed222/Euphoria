@@ -1,4 +1,8 @@
 .header {
+  &__logo {
+    max-width: 91px;
+  }
+
   .container {
     max-width: 1237px;
     padding: 31px 0;
@@ -6,10 +10,6 @@
     @media (max-width: 1300px) {
       padding: 31px 20px;
     }
-  }
-
-  & .logo {
-    max-width: 91px;
   }
 
   input[type="text"] {
@@ -31,7 +31,7 @@
     }
   }
 
-  .header-item {
+  &__item {
     @media (max-width: 1024px) {
       display: flex;
       flex-direction: column;
@@ -40,7 +40,7 @@
     }
   }
 
-  .cta {
+  &__cta {
     max-width: 156px;
     gap: 12px;
     margin-left: 76px;
@@ -61,11 +61,11 @@
     }
   }
 
-  .hamburger {
+  &__hamburger {
     position: relative;
     z-index: 99999;
 
-    & .line {
+    &-line {
       width: 50px;
       height: 5px;
       background-color: var(--color-1);

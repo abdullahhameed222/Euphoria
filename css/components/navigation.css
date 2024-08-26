@@ -1,5 +1,5 @@
 .header {
-  .header-nav {
+  &__nav {
     ul {
       list-style-type: none;
       gap: 40px;
@@ -15,7 +15,7 @@
       }
     }
 
-    &.header-nav-open {
+    &.header__nav-open {
       opacity: 1;
       pointer-events: auto;
       visibility: visible;

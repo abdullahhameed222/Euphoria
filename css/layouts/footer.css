@@ -1,14 +1,15 @@
 .footer {
   background-color: var(--color-1);
 
+  
   .container {
     padding: 60px 110px;
     padding: 60px 0;
     max-width: 1220px;
-
+    
     @media (max-width: 1110px) {
       padding: 50px 20px;
-      
+    }
     }
     .footer-list {
       max-width: 1059px;
@@ -21,7 +22,7 @@
       }
     }
 
-    .footer-nav {
+    &_nav {
       max-width: 142px;
 
       &:nth-child(3) {
@@ -123,5 +124,4 @@
       line-height: 2;
       padding-top: 37px;
     }
-  }
 }

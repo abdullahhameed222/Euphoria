@@ -5,8 +5,9 @@
     max-width: 1238px;
   }
 
-  .new-arrivals-wrapper {
+  .new-arrivals__wrapper {
     max-width: 1167px;
+    margin: 0 auto;
   }
   
   .swiper-slide {
