@@ -1,4 +1,7 @@
-var swiper = new Swiper(".mySwiper1", {
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+
+const swiper1 = new Swiper('.mySwiper1', {
   slidesPerView: 1,
   cssMode: true,
   loop:true,  
@@ -83,5 +86,6 @@ var swiper = new Swiper(".mySwiper3", {
     clickable: true
   },
 });
+
 
 

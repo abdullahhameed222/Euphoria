@@ -40,25 +40,22 @@
     background-color: var(--color-3);
     width: 63px;
     height: 10px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: unset;
-    border-bottom-left-radius: unset;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     opacity: 0.5;
   }
-  
-  .swiper-pagination-bullet-active {
+
+  .swiper-pagination .swiper-pagination-bullet-active {
     opacity: unset;
     background-color: var(--color-3);
     width: 62px;
     height: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: unset;
-    border-bottom-right-radius: unset;
     margin-right: 1px;
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
-
 
   .swiper-button-next,
   .swiper-button-prev {

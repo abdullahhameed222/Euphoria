@@ -786,29 +786,23 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
     background-color: var(--color-3);
     width: 63px;
     height: 10px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 12px;
     border-top-left-radius: 0;
-    border-top-left-radius: initial;
     border-bottom-left-radius: 0;
-    border-bottom-left-radius: initial;
     opacity: 0.5;
   }
 
-.slider .swiper-pagination-bullet-active {
+.slider .swiper-pagination .swiper-pagination-bullet-active {
     opacity: 1;
     opacity: initial;
     background-color: #FFFFFF;
     background-color: var(--color-3);
     width: 62px;
     height: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 0;
-    border-top-right-radius: initial;
-    border-bottom-right-radius: 0;
-    border-bottom-right-radius: initial;
     margin-right: 1px;
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
 .slider .swiper-button-next,
