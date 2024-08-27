@@ -5,7 +5,7 @@
     padding: 0 20px;
   }
 
-  .featured-brands-wrapper {
+  &__wrapper {
     margin-top: 67px;
     gap: 24px;
 

@@ -1,24 +1,7 @@
 .women-categories {
   margin-bottom: 100px;
   
-  h2 {
-    max-width: 440px;
-    color: var(--color-1);
-    font-family: CoreSans-Bold;
-    margin-bottom: 70px;
-
-    &::before {
-      display: inline-block;
-      content: "";
-      background-color: var(--color-5);
-      width: 6px;
-      height: 30px;
-      border-radius: 10px;
-      margin: 0 20px -5px 0;
-    }
-  }
-
-  .women-categories-wrapper {
+  &__wrapper {
     gap: 20px;
 
     @media (max-width: 1024px) {
@@ -27,7 +10,7 @@
     }
   }
 
-  .category {
+  &__category {
     max-width: 270px;
 
     img {
@@ -42,7 +25,7 @@
     }
   }
 
-  .category-details {
+  &__details {
     font-family: "Poppins", sans-serif;
 
     p {

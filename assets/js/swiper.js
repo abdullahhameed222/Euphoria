@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const swiper1 = new Swiper('.mySwiper1', {
+var swiper1 = new Swiper('.mySwiper1', {
   slidesPerView: 1,
   cssMode: true,
   loop:true,  
@@ -16,7 +16,7 @@ const swiper1 = new Swiper('.mySwiper1', {
   keyboard: true,
 });
 
-var swiper = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides: true,
@@ -56,35 +56,35 @@ var swiper = new Swiper(".mySwiper2", {
   keyboard: true,
 });
 
-var swiper = new Swiper(".mySwiper3", {
+var swiper3 = new Swiper(".mySwiper3", {
   spaceBetween: 23,
-  slidesPerView: 1,
-  centeredSlides: true,
-  loop:true,
+  // slidesPerView: 3,
+  loop: true,
   cssMode: true,
+  slidesPerView: 1,
 
   breakpoints: {
+
     1024: {
       slidesPerView: 3,
-      spaceBetweenSlides: 23,
-   },
+      spaceBetweenSlides: 10,
+    },
 
-    600: {
+    700: {
       slidesPerView: 2,
       spaceBetweenSlides: 10,
-      centeredSlides: true,
   },
     500: {
       slidesPerView: 1,
       spaceBetweenSlides: 10,
-      centeredSlides: true,
-
-  }
+  },
 },
   pagination: {
     el: ".testimonials .swiper-pagination",
     clickable: true
   },
+  mousewheel: true,
+  keyboard: true,
 });
 
 

@@ -8,15 +8,7 @@
     }
   }
 
-  .img-w-text-bg {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .img-w-text-content {
+  &__wrapper {
     @media (max-width: 1110px) {
       display: flex;
       align-items: center;
@@ -24,7 +16,13 @@
     }
   }
 
-  .img-w-text-details {
+  &__bg {
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__details {
     padding: 183px 74px 174px 74px;
 
     @media (max-width: 1110px) {
@@ -78,7 +76,7 @@
     }
   }
 
-  .img-w-text-img {
+  &__img {
     max-width: 626px;
     width: 100%;
 
