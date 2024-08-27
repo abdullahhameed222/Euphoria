@@ -642,7 +642,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
     width: 267px;
     max-width: 100%;
     padding: 12px 0 12px 52px;
-    background-image: url("../assets/icons/icon-search.svg");
+    background-image: url('assets/icons/icon-search.svg');
     background-repeat: no-repeat;
     color: #807D7E;
     color: var(--color-2);
@@ -735,7 +735,6 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
 .header__hamburger.is-active .header__hamburger-line:nth-child(3) {
       transform: translateY(-13px) rotate(-45deg);
-
     }
 
 .slider {
