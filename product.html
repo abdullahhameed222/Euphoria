@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Euphoria - Product</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header relative">
+    <div class="container flex flex-justify-between">
+      <a href="index.html" class="header__logo relative">
+        <img src="assets/icons/icon-logo.svg" alt="logo">
+      </a>
+
+      <nav class="header__nav flex flex-align-center w-100 flex-justify-between">
+        <ul class="flex flex-wrap">
+          <li><a href="#">Shop</a></li>
+          
+          <li><a href="#">Men</a></li>
+          
+          <li><a href="#">Women</a></li>
+          
+          <li><a href="#">Combos</a> </li>
+          
+          <li><a href="#">Joggers</a></li>
+        </ul>
+          
+        <div class="flex flex-justify-between header__item">
+          <input type="text" placeholder="Search">
+          <div class="header__cta flex">
+            <a class="item"> 
+              <img src="assets/icons/icon-like.svg" alt="icon like">
+            </a>
+
+            <a class="item">
+              <img src="assets/icons/icon-user.svg" alt="icon user">
+            </a>
+
+            <a class="item">
+              <img src="assets/icons/icon-cart.svg" alt="icon cart">
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__hamburger">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <div class="product">
+      <div class="product__container container relative flex flex-row-r">
+         <div class="swiper mySwiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/imgs/img-product.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/imgs/img-women-category-1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/imgs/img-women-category-2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/imgs/img-women-category-3.png" />
+            </div>
+          </div>
+
+          <div class="swiper-buttons absolute">
+            <div class="swiper-button-next">
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19869 0.599992C1.45693 0.403104 1.82588 0.452836 2.02277 0.711072L4.9567 4.55918C5.02975 4.60754 5.13639 4.60754 5.20944 4.55918L8.14337 0.711073C8.34026 0.452836 8.70921 0.403104 8.96745 0.599992C9.22568 0.796881 9.27542 1.16583 9.07853 1.42407L6.13447 5.28545C6.10012 5.33052 6.04812 5.39288 5.97611 5.45255C5.46302 5.8777 4.70313 5.8777 4.19003 5.45255C4.11802 5.39288 4.06602 5.33052 4.03167 5.28545L1.08761 1.42407C0.890725 1.16583 0.940458 0.796881 1.19869 0.599992Z" fill="white"/>
+              </svg>  
+            </div>
+  
+            <div class="swiper-button-prev">
+              <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.20263 5.31578C7.9444 5.51267 7.57545 5.46294 7.37856 5.2047L4.44463 1.35659C4.37158 1.30823 4.26493 1.30823 4.19189 1.35659L1.25796 5.2047C1.06107 5.46294 0.692119 5.51267 0.433882 5.31578C0.175646 5.11889 0.125913 4.74994 0.322801 4.4917L3.26686 0.630317C3.30121 0.585256 3.3532 0.522894 3.42522 0.463225C3.93831 0.0380759 4.6982 0.0380759 5.2113 0.463225C5.28331 0.522894 5.33531 0.585256 5.36966 0.630317L8.31372 4.4917C8.5106 4.74994 8.46087 5.11889 8.20263 5.31578Z" fill="#3C4242"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div thumbsSlider="" class="swiper mySwiper5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/imgs/img-product.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/imgs/img-women-category-1.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/imgs/img-women-category-2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/imgs/img-women-category-3.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/script.min.js"></script>
+  <script type="module" src="assets/js/swiper.js"></script>
+  <script type="module" src="assets/js/script.js"></script>
+</body> 
+</html>

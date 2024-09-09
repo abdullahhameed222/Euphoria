@@ -1,5 +1,8 @@
 .header {
   &__nav {
+    max-width: 1059px;
+    margin-left: 87px;
+    
     ul {
       list-style-type: none;
       gap: 40px;
@@ -42,6 +45,7 @@
       opacity: 0;
       pointer-events: none;
       visibility: hidden;
+      margin-left: 0;
     }
 
     li {

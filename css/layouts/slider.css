@@ -16,19 +16,12 @@
   }
 
   &__desktop-img {
-    @media (max-width: 767px) {
-      display: none;
-    }
-  }
-
-  &__desktop-mobile  {
-    display: none;
     width: 100%;
-
-    @media (max-width: 767px) {
-      display: block;
-    }
+    object-fit: cover;
+    height: 100%;
+    object-position: top;
   }
+
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -40,12 +33,20 @@
     background-color: var(--color-3);
     width: 63px;
     height: 10px;
-    border-radius: 12px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    /* border-top-right-radius: 0;
-    border-bottom-right-radius: 0; */
+    border-radius: 0;
     opacity: 0.5;
+
+    &:first-child {
+      border-radius: 12px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-radius: 12px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
   }
 
   .swiper-pagination .swiper-pagination-bullet-active {
@@ -54,9 +55,6 @@
     width: 62px;
     height: 10px;
     margin-right: 1px;
-    border-radius: 12px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 
   .swiper-button-next,
@@ -65,30 +63,37 @@
     margin-top: 0;
 
     @media (max-width: 767px) {
-      top: 80%;
+      display: none;
     }
   }
 
   .swiper-button-next {
     right: 43px;
+
+    @media (max-width: 1110px) {
+      right: 30px;
+    }
   }
 
   .swiper-button-prev {
     left: 40px;
+
+    @media (max-width: 1110px) {
+      left: 20px;
+    }
   }
 
    &__content {
-    top: 129px;
-    left: 193px;
+    padding: 129px 0 132px 0;
+    max-width: 1079px;
+    margin: 0 auto;
 
-    @media (max-width: 1200px) {
-      top: 40px;
-      left: 130px;
+    @media (max-width: 1230px) {
+      padding: 129px 100px 132px 80px;
     }
 
     @media (max-width: 767px) {
-      top: 30%;
-      left: 30%;
+      padding-left : 30px;
     }
 
     span {

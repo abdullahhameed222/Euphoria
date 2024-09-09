@@ -6,4 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     this.classList.toggle('is-active');
     nav.classList.toggle('header__nav-open'); 
   });
+
+  const filterbtnEl = document.querySelector('.sidebar-nav__filter');
+  const asideContent = document.querySelector('.sidebar-nav__aside');
+  console.log(asideContent)
+
+  filterbtnEl.addEventListener("click",function(){
+    asideContent.classList.toggle('sidebar-nav__aside--active')
+  })
 });

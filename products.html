@@ -14,13 +14,13 @@
 <body>
   <header class="header relative">
     <div class="container flex flex-justify-between">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="header__logo relative">
         <img src="assets/icons/icon-logo.svg" alt="logo">
       </a>
 
-      <nav class="header-nav flex flex-align-center w-100 flex-justify-evenly">
+      <nav class="header__nav flex flex-align-center w-100 flex-justify-between">
         <ul class="flex flex-wrap">
-          <li><a href="#">Shop</a></li>
+          <li><a href="#">Shop</a></li> 
           
           <li><a href="#">Men</a></li>
           
@@ -31,9 +31,9 @@
           <li><a href="#">Joggers</a></li>
         </ul>
           
-        <div class="flex flex-justify-between header-item">
+        <div class="flex flex-justify-between header__item">
           <input type="text" placeholder="Search">
-          <div class="cta flex">
+          <div class="header__cta flex">
             <a class="item"> 
               <img src="assets/icons/icon-like.svg" alt="icon like">
             </a>
@@ -49,75 +49,645 @@
         </div>
       </nav>
 
-      <div class="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+      <div class="header__hamburger">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
       </div>
     </div>
   </header>
 
-  <div class="container">
-    <div class="sidebar-nav">
-      <div class="filter-wrapper flex flex-justify-between">
+  <div class="products container flex">
+    <div class="sidebar-nav flex-align-self-start">
+      <div class="sidebar-nav__wrapper sidebar-nav__filter flex flex-justify-between">
         <span>Filter</span>
         <img src="assets/icons/icon-filter.svg" alt="Filter icon">
       </div>
 
-      <div class="accordian-block flex flex-col">
-        <div class="accordian-item flex flex-justify-between">
-          <p class="text-md">Tops</p>
-          <img src="assets/icons/icon-chevron-right-gray.svg" alt="right chevron">
+      <aside class="sidebar-nav__aside">
+        <div class="sidebar-nav__accordian flex flex-col">
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Tops</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Printed T-shirts</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Kurti</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Boxers</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Full sleeve T-shirts</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Joggers</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Payjamas</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Jeans</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
         </div>
 
-        <div class="accordian-item flex flex-justify-between">
-          <p class="text-md">Printed T-shirts</p>
-          <img src="assets/icons/icon-chevron-right-gray.svg" alt="right chevron">
-        </div>
-
-        <div class="accordian-item flex flex-justify-between">
-          <p class="text-md">Kurti</p>
-          <img src="assets/icons/icon-chevron-right-gray.svg" alt="right chevron">
-        </div>
-        <div class="accordian-item flex flex-justify-between">
-          <p class="text-md">Boxers</p>
-          <img src="assets/icons/icon-chevron-right-gray.svg" alt="right chevron">
-        </div>
-
-        <div class="accordian-item flex flex-justify-between">
-          <p class="text-md">Full sleeve T-shirts</p>
-          <img src="assets/icons/icon-chevron-right-gray.svg" alt="right chevron">
-        </div>
-
-        <div class="accordian-item flex flex-justify-between">
-          <p class="text-md">Joggers</p>
-          <img src="assets/icons/icon-chevron-right-gray.svg" alt="right chevron">
-        </div>
-
-        <div class="accordian-item flex flex-justify-between">
-          <p class="text-md">Payjamas</p>
-          <img src="assets/icons/icon-chevron-right-gray.svg" alt="right chevron">
-        </div>
-
-        <div class="accordian-item flex flex-justify-between">
-          <p class="text-md">Jeans</p>
-          <img src="assets/icons/icon-chevron-right-gray.svg" alt="right chevron">
-        </div>
-      </div>
-
-      <div class="products-price-range">
-        <div class="filter-wrapper flex flex-justify-between">
+        <div class="sidebar-nav__wrapper sidebar-nav__accordian-item flex flex-justify-between">
           <span>Price</span>
           <img src="assets/icons/icon-chevron-up.svg" alt="Filter icon">
         </div>
 
-      <section class="range-slider">
-        <span class="rangeValues"></span>
-        <input value="5" min="0" max="15" step="0.5" type="range">
-        <input value="10" min="0" max="15" step="0.5" type="range">
-      </section>
+        <div class="sidebar-nav__slider relative">
+          <div class="slider-nav__track"></div>
+          <input type="range" min="0" max="100" value="25" id="slider-1">      
+          <input type="range" min="0" max="800" value="525" id="slider-2">      
+          <div class="slider-nav__values flex flex-align-center flex-justify-center">
+            <input type="text" id="range1">
+            <input type="text" id="range2">
+          </div>
+        </div>
+
+        <div class="sidebar-nav__wrapper flex flex-justify-between">
+          <span>Colors</span>
+          <img src="assets/icons/icon-chevron-up.svg" alt="chevron icon">
+        </div>
+
+        <div class="sidebar-nav__colors  flex flex-wrap flex-align-center flex-justify-center">
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Purple</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Black</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Red</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Orange</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Navy</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">White</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Broom</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Green</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Yellow</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Grey</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Pink</span>
+          </div>
+
+          <div class="sidebar-nav__color flex flex-align-center flex-col">
+            <div></div>
+            <span class="text-sm">Blue</span>
+          </div>
+        </div>
+
+        <div class="sidebar-nav__wrapper flex flex-justify-between">
+          <span>Colors</span>
+          <img src="assets/icons/icon-chevron-up.svg" alt="chevron icon">
+        </div>
+
+        <div class="sidebar-nav__size  flex flex-justify-start flex-wrap">
+          <span class="text-sm text-uppercase">xxs</span>
+          <span class="text-sm text-uppercase">xl</span>
+          <span class="text-sm text-uppercase">xs</span>
+          <span class="text-sm text-uppercase">s</span>
+          <span class="text-sm text-uppercase">m</span>
+          <span class="text-sm text-uppercase">l</span>
+          <span class="text-sm text-uppercase">xxl</span>
+          <span class="text-sm text-uppercase">3xl</span>
+          <span class="text-sm text-uppercase">4xl</span>
+        </div>
+
+        <div class="sidebar-nav__wrapper flex flex-justify-between">
+          <span>Dress Style</span>
+          <img src="assets/icons/icon-chevron-up.svg" alt="chevron icon">
+        </div> 
+
+        <div class="sidebar-nav__accordian  flex flex-col">
+          <div class=" flex flex-justify-between">
+            <p class="text-md">Classic</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class=" flex flex-justify-between">
+            <p class="text-md">Casual</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Sport</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Elegant</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+
+          <div class="sidebar-nav__accordian-item flex flex-justify-between">
+            <p class="text-md">Formal (evening)</p>
+            <img src="assets/icons/icon-chevron-gray.svg" alt="right chevron">
+          </div>
+        </div>
+      </aside>  
+    </div>
+
+    <section class="women-products">
+      <div class="women-products__header flex flex-justify-between">
+        <h1>Women's Clothing</h1> 
+        <div class="women-products__filter flex">
+          <span>New</span>
+          <span>Recommended</span>
+        </div>
+      </div>
+       
+      <div class="women-products__wrapper flex flex-wrap flex-align-center flex-justify-center">
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-featured-card-1.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">Black Sweatshirt with ....</p>
+              <span class="text-sm">Jhanvi’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$123.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-2.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">White T-shirt</p>
+              <span class="text-sm">Helen’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$11.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-3.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">Levender Hoodie with ....</p>
+              <span class="text-sm">Nike’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$119.00   </div>
+          </div>
+        </div>
+        
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-4.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">Leaves Pattern White...</p>
+              <span class="text-sm">paypal’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$77.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-5.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">White Graphic Crop Top</p>
+              <span class="text-sm">woden’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$29.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-6.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">Black Shorts</p>
+              <span class="text-sm">MM’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$37.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-7.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">Barboreal Gray Sweats...</p>
+              <span class="text-sm">Priya’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$77.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-8.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">Yellow Sweatshirt</p>
+              <span class="text-sm">woden’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$29.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-9.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">Flower Pattern Black C...</p>
+              <span class="text-sm">MM’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$37.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-10.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">BI Don’t Graphic T-shirt </p>
+              <span class="text-sm">Nisargi’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$77.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-11.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">Blue Flower Print Crop ....</p>
+              <span class="text-sm">Mellon’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$29.00</div>
+          </div>
+        </div>
+
+        <div class="women-products__product relative">
+          <a href="#">
+            <img class="women-products__img" src="assets/imgs/img-women-product-12.png" alt="women img">
+          </a>
+          <button class="flex flex-align-center flex-justify-center women-products__cta absolute">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7199 2.7123C6.34507 1.1101 4.05247 0.679115 2.32991 2.14625C0.60735 3.61339 0.364838 6.06637 1.71757 7.80155C2.84228 9.24424 6.24604 12.287 7.3616 13.2718C7.48641 13.382 7.54882 13.4371 7.62161 13.4587C7.68514 13.4776 7.75465 13.4776 7.81819 13.4587C7.89098 13.4371 7.95338 13.382 8.07819 13.2718C9.19376 12.287 12.5975 9.24424 13.7222 7.80155C15.075 6.06637 14.862 3.59795 13.1099 2.14625C11.3577 0.694548 9.09472 1.1101 7.7199 2.7123Z" stroke="#3C4242" stroke-width="1.26066" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="flex flex-justify-between">
+            <div class="women-products__details">
+              <p class="text-md">line Pattern Black H...</p>
+              <span class="text-sm">AS’s  Brand</span>
+            </div>
+            <div class="women-products__price  text-sm flex flex-align-center flex-justify-center">$37.00</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div> 
+
+  <section class="about-us"> 
+    <div class="container">
+      <h2 class="heading-right-border">Clothing for Women Online in India</h2>
+      <div class="about-us__details">
+        <h3>Reexplore Women's Clothing Collection Online ats Euphoria</h3>
+        <p>Women's Clothing – Are you searching for the best website to buy Clothing for Women online in India? 
+          Well, your search for the coolest and most stylish womens clothing ends here. From trendy Casual Womens
+          Wear Online shopping to premium quality cotton women's apparel, 
+          <span>Euphoria</span> has closet of Women Collection covered with the latest and best designs of Women's Clothing Online.</p>
+        <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Womens Wear. </p>
+        <h3>One-Stop Destination to Shop Every Clothing for Women: Euphoria</h3>
+        <p>Today, Clothing for Women is gaining more popularity above all. This is because 
+          gone are the days when women were used to carrying uncomfortable fashion. 
+          Today, a lady looks prettier when she is in Casual Womens Wear which is a 
+          comfortable outfit. Concerning this, <span>Euphoria</span> has a big fat range of 
+          Stylish Women's Clothing that would make her the winner wherever she goes. </p>
+        <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Womens Wear. 
+          It is quite evident to say that there are very few Womens Clothing online stores where you can buy Western Wear for Women
+          comprising the premium material and elegant design that you are always seeking for. Basically, </p>
+        <a href="#">See More</a>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section class="pricing-table">
+    <div class="container">
+      <h3 class="heading-right-border">Buy Women's Clothing at Best Price</h3>
+      <table class="pricing-table__table w-100 relative">
+        <thead>
+          <tr class="pricing-table__headings text-left">
+            <th>Women Clothings</th>
+            <th>Best Price</th>
+          </tr>
+        </thead>
+        <tbody class="pricing-table__content">
+          <tr>
+            <td >Pick Any 4- Womens Plain T-shirt Combo</td>
+            <td>₹1099</td>
+          </tr>
+
+          <tr>
+            <td>Pick Any 4- Plain Womens Boxer Combo</td>
+            <td>₹1099</td>
+          </tr>
+
+          <tr>
+            <td>Pick Any 4 - Women Plain Full Sleeve T-shirt Combo</td>
+            <td>₹1399</td>
+          </tr>
+
+          <tr>
+            <td>Multicolor Checkered Long Casual Shirts for Women</td>
+            <td>₹499</td>
+          </tr>
+
+          <tr>
+            <td>Pick Any 2: Plain Boxy Casual Shirts for Women Combo</td>
+            <td>₹799</td>
+          </tr>
+
+          <tr>
+            <td>Blue Floral Anarkali Kurti</td>
+            <td>₹599</td>
+          </tr>
+
+          <tr>
+            <td>Jade Black Narrow Cut Flexible Women Jeggings</td>
+            <td>₹998</td>
+          </tr>
+
+          <tr>
+            <td>Mustard-yellow Solid Straight-Fit Women Pant</td>
+            <td>₹499</td>
+          </tr>
+
+          <tr>
+            <td>Women Pants Combo - Pick Any 2</td>
+            <td>₹800</td>
+          </tr>
+
+          <tr>
+            <td>Pista Green Solid Boxy Casual Shirts for Women</td>
+            <td>₹449</td>
+          </tr>
+
+          <tr>
+            <td>Plain Burgundy Womens Boxer</td>
+            <td>₹349</td>
+          </tr>
+          
+          <tr>
+            <td>Striped Front Tie Casual Shirts for Women</td>
+            <td>₹449</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__list flex flex-justify-between">
+        <div class="footer__nav">
+          <span>Need Help</span>
+          <ul class="flex flex-col">
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            
+            <li>
+              <a href="#">Track Order</a>
+            </li>
+            
+            <li>
+              <a href="#">Returns & Refunds</a>
+            </li>
+            
+            <li>
+              <a href="#">FAQ's</a>
+            </li>
+            
+            <li>
+              <a href="#">Career</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <span>Company</span>
+          <ul class="flex flex-col">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            
+            <li>
+              <a href="#">euphoria Blog</a>
+            </li>
+            
+            <li>
+              <a href="#">euphoriastan</a>
+            </li>
+            
+            <li>
+              <a href="#">Collaboration</a>
+            </li>
+            
+            <li>
+              <a href="#">Media</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <span>More Info</span>
+          <ul class="flex flex-col">
+            <li>
+              <a href="#">Term and Conditions</a>
+            </li>
+            
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            
+            <li>
+              <a href="#">Shipping Policy</a>
+            </li>
+            
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__nav">
+          <span>Location</span>
+          <ul class="flex flex-col">
+            <li>support@euphoria.in</li>
+            <li>Eklingpura Chouraha, Ahmedabad Main Road</li>
+            <li>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__details flex flex-justify-between">
+        <div class="footer__icons flex flex-align-end flex-justify-center">
+          <a href="#">
+            <img src="assets/icons/icon-facebook.svg" alt="icon">
+          </a>
+
+          <a href="#">
+            <img src="assets/icons/icon-instagram.svg" alt="icon">
+          </a>
+
+          <a href="#">
+            <img src="assets/icons/icon-twitter.svg" alt="icon">
+          </a>
+
+          <a href="#">
+            <img src="assets/icons/icon-likdeln.svg" alt="icon">
+          </a>
+        </div>
+        <div class="footer__content">
+          <h3>Download The App</h3>
+          <div class="footer__icons flex">
+            <img src="assets/imgs/img-footer-playstore.png" alt="playstore icon">
+            <img src="assets/imgs/img-footer-appstore.png" alt="appstore icon">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__categories flex flex-justify-between">
+        <h3>Popular Categories</h3>
+        <img src="assets/icons/icon-chevron-down.svg" alt="">
+      </div>
+      <p class="footer__copyright text-center">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="module" src="assets/js/range-selector.js"></script>
+  <script type="module" src="assets/js/script.js"></script>
 </body>
 </html>

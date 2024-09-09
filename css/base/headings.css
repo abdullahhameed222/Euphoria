@@ -23,6 +23,8 @@ h4 {
 }
 
 .heading-right-border {
+    position: relative;
+    left: 20px;
     font-size: 34px;
     line-height: 1.3;
     max-width: 440px;
@@ -30,13 +32,18 @@ h4 {
     font-family: CoreSans-Bold;
     margin-bottom: 70px;
 
-    &::before {
-      display: inline-block;
-      content: "";
-      background-color: var(--color-5);
-      width: 6px;
-      height: 30px;
-      border-radius: 10px;
-      margin: 0 20px -5px 0;
+    @media (max-width: 767px) {
+      font-size: 28px;
     }
+
+    &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 9px;
+    top: 5px;
+    background-color: var(--color-5);
+    width: 6px;
+    border-radius: 10px;
+  }
 }

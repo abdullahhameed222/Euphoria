@@ -3,8 +3,9 @@ import 'swiper/css/bundle';
 
 var swiper1 = new Swiper('.mySwiper1', {
   slidesPerView: 1,
-  cssMode: true,
-  loop:true,  
+  cssMode: false,
+  loop:true,
+  draggable:true,
   navigation: {
     nextEl: '.mySwiper1 .swiper-button-next',
     prevEl: '.mySwiper1 .swiper-button-prev',
@@ -12,7 +13,7 @@ var swiper1 = new Swiper('.mySwiper1', {
   pagination: {
     el: '.mySwiper1 .swiper-pagination',
   },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true,
 });
 
@@ -20,8 +21,9 @@ var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   spaceBetween: 10,
   centeredSlides: true,
-  cssMode: true,
+  cssMode: false,
   loop:true,  
+  
   navigation: {
     nextEl: '.new-arrivals .swiper-button-next',
     prevEl: '.new-arrivals .swiper-button-prev',
@@ -52,19 +54,18 @@ var swiper2 = new Swiper(".mySwiper2", {
       centeredSlides: true,
     }
 },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true,
 });
 
 var swiper3 = new Swiper(".mySwiper3", {
   spaceBetween: 23,
-  // slidesPerView: 3,
   loop: true,
-  cssMode: true,
+  cssMode: false,
   slidesPerView: 1,
+  draggable:true,
 
   breakpoints: {
-
     1024: {
       slidesPerView: 3,
       spaceBetweenSlides: 10,
@@ -79,13 +80,31 @@ var swiper3 = new Swiper(".mySwiper3", {
       spaceBetweenSlides: 10,
   },
 },
+
   pagination: {
     el: ".testimonials .swiper-pagination",
-    clickable: true
+    clickable: true,
+    draggable: true,
   },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true,
 });
 
+var swiper5 = new Swiper(".mySwiper5", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
 
+var swiper4 = new Swiper(".mySwiper4", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper5
+  },
+});
 

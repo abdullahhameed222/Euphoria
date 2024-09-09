@@ -29,17 +29,17 @@
     border: none;
     top: 26px;
     right: 20px;
-    max-width: 32px;
-    max-height: 32px;
+    width: 32px;
+    height: 32px;
     background-color:var(--color-3);
-    padding: 10px 9px 9px 8px;
     border-radius: 100px;
   }
 
   &__wrapper {
     gap: 20px;
 
-    @media (max-width: 1024px) {
+
+    @media (max-width: 1220px) {
       align-items: center;
       justify-content: center;
     }

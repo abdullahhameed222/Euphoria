@@ -1,4 +1,6 @@
 .header {
+  border-bottom: 1px solid var(--color-27);
+  
   &__logo {
     max-width: 91px;
     z-index: 99999;
@@ -67,8 +69,8 @@
     z-index: 99999;
 
     &-line {
-      width: 50px;
-      height: 5px;
+      width: 30px;
+      height: 2px;
       background-color: var(--color-1);
       display: none;
       margin: 8px auto;
@@ -89,7 +91,7 @@
       -webkit-transform: translateY(13px) rotate(45deg);
       -ms-transform: translateY(13px) rotate(45deg);
       -o-transform: translateY(13px) rotate(45deg);
-      transform: translateY(13px) rotate(45deg);
+      transform: translateY(7px) rotate(45deg);
     }
 
     &.is-active .header__hamburger-line:nth-child(2) {

@@ -1,0 +1,52 @@
+.about-us {
+  .container {
+    margin-bottom: 100px;
+  }
+
+  h2 {
+  color: var(--color-1);
+  font-size: 28px;
+  line-height: 1.1;
+  max-width: 573px;
+  width: 100%;
+  margin-bottom: 30px;
+  }
+
+  &__details {
+    padding-left: 21px;
+  
+    h3 {
+      color: var(--color-2);
+      font-family: CoreSans-Medium;
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    
+    p {
+      max-height: 104px;
+      max-width: 1217px;
+      color: var(--color-2);
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      letter-spacing: 0.4px;
+
+      @media (max-width: 1024px) {
+        max-height: unset;
+      }
+
+      span {
+        font-family: Causten-Bold;
+      }
+    }
+
+    a {
+      color: var( --color-2);
+      font-family: CoreSans-Medium;
+      font-size: 20px;
+      line-height: 1.6;
+      letter-spacing: 0.4px;
+    }
+  }
+}

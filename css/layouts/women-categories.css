@@ -4,7 +4,12 @@
   &__wrapper {
     gap: 20px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1182px) {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 1110px) {
       align-items: center;
       justify-content: center;
     }

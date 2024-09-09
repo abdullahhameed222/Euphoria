@@ -14,9 +14,8 @@
     img {
       max-width: 262px;
 
-      @media (max-width: 1110px) {
+      @media (max-width: 1200px) {
         max-width: 100%;
-        width: 100%;
       }
     }
 
