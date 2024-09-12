@@ -1,4 +1,4 @@
-import Swiper from 'swiper/bundle';
+ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 var swiper1 = new Swiper('.mySwiper1', {
@@ -91,18 +91,22 @@ var swiper3 = new Swiper(".mySwiper3", {
 });
 
 var swiper5 = new Swiper(".mySwiper5", {
-  spaceBetween: 10,
-  slidesPerView: 4,
+  spaceBetween: 22,
+  speed: 700,
+  slidesPerView: 3,
+  cssMode: true,
   freeMode: true,
-  watchSlidesProgress: true,
-});
 
-var swiper4 = new Swiper(".mySwiper4", {
-  spaceBetween: 10,
+  watchSlidesProgress: true,
+  direction: 'vertical',
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+var swiper4 = new Swiper(".mySwiper4", {
+  loop: true,
   thumbs: {
     swiper: swiper5
   },

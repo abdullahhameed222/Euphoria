@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Euphoria - Product</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header relative">
+    <div class="container flex flex-justify-between">
+      <a href="index.html" class="header__logo relative">
+        <img src="assets/icons/icon-logo.svg" alt="logo">
+      </a>
+
+      <nav class="header__nav flex flex-align-center w-100 flex-justify-between">
+        <ul class="flex flex-wrap">
+          <li><a href="#">Shop</a></li>
+          
+          <li><a href="#">Men</a></li>
+          
+          <li><a href="#">Women</a></li>
+          
+          <li><a href="#">Combos</a> </li>
+          
+          <li><a href="#">Joggers</a></li>
+        </ul>
+          
+        <div class="flex flex-justify-between header__item">
+          <input type="text" placeholder="Search">
+          <div class="header__cta flex">
+            <a class="item"> 
+              <img src="assets/icons/icon-like.svg" alt="icon like">
+            </a>
+
+            <a class="item">
+              <img src="assets/icons/icon-user.svg" alt="icon user">
+            </a>
+
+            <a class="item">
+              <img src="assets/icons/icon-cart.svg" alt="icon cart">
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__hamburger">
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart">
+      <div class="container cart__breadcrumbs">
+        <div class="cart__breadcrumbs-wrapper flex">
+          <span class="cart__breadcrumb flex">
+            Home
+            <img src="assets/icons/icon-chevron-gray-right.svg" alt="chevron right">
+          </span>
+          <span>Add to Cart</span>
+        </div>
+        <p class="cart__breadcrumbs-text text-sm">
+          Please fill in the fields below and click place order to complete your purchase!
+          Already registered?<span> Please login here </span>
+        </p>
+      </div>
+      <table   border="0" cellspacing="0" cellpadding="0" class="cart__table">
+        <thead class="cart__header">
+          <tr cellspacing="0" class="cart__header-row">
+            <th class="text-uppercase">Product Deails</th>
+            <th class="text-uppercase">Price</th>
+            <th class="text-uppercase">Quantity</th>
+            <th class="text-uppercase">shipping</th>
+            <th class="text-uppercase">subtotal</th>
+            <th class="text-uppercase">action</th>
+          </tr>
+        </thead>
+        <tbody class="cart__list">
+          <tr class="cart__item">
+            <td class="cart__item-img"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html> 

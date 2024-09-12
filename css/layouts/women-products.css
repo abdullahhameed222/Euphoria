@@ -1,7 +1,11 @@
 .women-products {
-  max-width: 893px;
   width: 100%;
   padding-top: 50px;
+
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
 
   @media (max-width: 1024px) {
     padding-top: 20px;
@@ -31,8 +35,9 @@
     max-width: 210px;
     gap: 25px;
 
-    span {
+    a {
       font-family: Causten-SemiBold;
+      text-decoration: none;
       font-size: 22px;
       line-height: 1.2;
       color: var(--color-26);

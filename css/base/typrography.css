@@ -38,6 +38,11 @@
   src: url("/assets/fonts/CoreSansC-Medium.woff");
 }
 
+@font-face {
+  font-family: CoreSans-SemiBold;
+  src: url("/assets/fonts/CoreSansC-SemiBold.otf");
+}
+
 body {
   font-family: Causten-Regular;
 }
